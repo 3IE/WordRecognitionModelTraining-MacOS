@@ -9,3 +9,5 @@ xcuserdata/
 .DS_Store
 .AppleDouble
 .LSOverride
+wordTraining/training/nearest
+wordTraining/test/nearest
