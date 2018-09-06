@@ -4,7 +4,7 @@ import CreateMLUI
 
 func vowelTraining() {
     do {
-        let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/verdie_b/Desktop/coreml/vowelTraining/vowelTrainingData-20180823-17h50.json"))
+        let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/verdie_b/Documents/versioning/WordRecognitionModelTraining-MacOS/vowelTraining/vowelTrainingData-20180823-17h50.json"))
 		let seed = Int((Date().timeIntervalSince1970 - Date().timeIntervalSince1970.rounded()) * 1000)
         let (trainingData, testingData) = data.randomSplit(by: 0.90, seed: seed)
         
@@ -23,7 +23,6 @@ func vowelTraining() {
     catch {
         print("unable to generate")
     }
-
 }
 
 func wordTraining() {
