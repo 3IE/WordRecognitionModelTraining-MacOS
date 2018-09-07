@@ -21,6 +21,7 @@ func vowelTraining() {
         try reco.write(to: url, metadata: metadata)
     }
     catch {
+		print(error)
         print("unable to generate")
     }
 }
